@@ -8,10 +8,14 @@
 #
 
 %w{
-	httpd php php-mbstring php-gd php-mysql php-pear
-}.each do |package|
+	httpd
+	php
+	php-mbstring
+	php-gd
+	php-mysql
+	php-pear
+	}.each do |package|
   action :install
-}
 end
 
 service "httpd" do
